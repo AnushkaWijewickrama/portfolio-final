@@ -7,7 +7,7 @@ import { ServicesComponent } from "../components/sections/services/services.comp
 import { SkillsComponent } from "../components/sections/skills/skills.component";
 import { ProjectsComponent } from "../components/sections/projects/projects.component";
 import { ContactComponent } from "../components/sections/contact/contact.component";
-import { FooterComponent } from "../components/sections/footer/footer.component";
+import { FooterComponent } from "../components/footer/footer.component";
 
 @Component({
   selector: 'app-home',
