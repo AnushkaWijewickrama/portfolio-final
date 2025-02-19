@@ -20,9 +20,7 @@
             "outputPath": "dist/pf",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -32,9 +30,22 @@
               }
             ],
             "styles": [
+              "src/lib/owlcarousel/assets/owl.carousel.min.css",
+              "src/lib/lightbox/css/lightbox.min.css",
+              "src/css/style.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/lib/typed/typed.min.js",
+              "src/lib/easing/easing.min.js",
+              "src/lib/waypoints/waypoints.min.js",
+              "src/lib/owlcarousel/owl.carousel.min.js",
+              "src/lib/isotope/isotope.pkgd.min.js",
+              "src/lib/lightbox/js/lightbox.min.js",
+              "src/lib/js/main.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -83,10 +94,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -96,9 +104,22 @@
               }
             ],
             "styles": [
+              "src/lib/owlcarousel/assets/owl.carousel.min.css",
+              "src/lib/lightbox/css/lightbox.min.css",
+              "src/css/style.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "src/lib/typed/typed.min.js",
+              "src/lib/easing/easing.min.js",
+              "src/lib/waypoints/waypoints.min.js",
+              "src/lib/owlcarousel/owl.carousel.min.js",
+              "src/lib/isotope/isotope.pkgd.min.js",
+              "src/lib/lightbox/js/lightbox.min.js",
+              "src/lib/js/main.js"
+            ]
           }
         }
       }
