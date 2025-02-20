@@ -30,21 +30,18 @@
               }
             ],
             "styles": [
-              "src/lib/owlcarousel/assets/owl.carousel.min.css",
-              "src/lib/lightbox/css/lightbox.min.css",
-              "src/css/style.css",
+              "src/vendor/bootstrap/css/bootstrap.min.css",
+              "src/vendor/simple-line-icons/css/simple-line-icons.css",
+              "src/vendor/devicons/css/devicons.min.css",
+              "src/vendor/font-awesome/css/font-awesome.min.css",
+              "src/css/resume.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/jquery/dist/jquery.min.js",
-              "src/lib/typed/typed.min.js",
-              "src/lib/easing/easing.min.js",
-              "src/lib/waypoints/waypoints.min.js",
-              "src/lib/owlcarousel/owl.carousel.min.js",
-              "src/lib/isotope/isotope.pkgd.min.js",
-              "src/lib/lightbox/js/lightbox.min.js",
-              "src/lib/js/main.js"
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "src/vendor/jquery-easing/jquery.easing.min.js",
+              "src/js/resume.min.js"
             ],
             "server": "src/main.server.ts",
             "prerender": true,
@@ -104,21 +101,18 @@
               }
             ],
             "styles": [
-              "src/lib/owlcarousel/assets/owl.carousel.min.css",
-              "src/lib/lightbox/css/lightbox.min.css",
-              "src/css/style.css",
+              "src/vendor/bootstrap/css/bootstrap.min.css",
+              "src/vendor/simple-line-icons/css/simple-line-icons.css",
+              "src/vendor/devicons/css/devicons.min.css",
+              "src/vendor/font-awesome/css/font-awesome.min.css",
+              "src/css/resume.css",
               "src/styles.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "src/lib/typed/typed.min.js",
-              "src/lib/easing/easing.min.js",
-              "src/lib/waypoints/waypoints.min.js",
-              "src/lib/owlcarousel/owl.carousel.min.js",
-              "src/lib/isotope/isotope.pkgd.min.js",
-              "src/lib/lightbox/js/lightbox.min.js",
-              "src/lib/js/main.js"
+              "src/vendor/jquery-easing/jquery.easing.min.js",
+              "src/js/resume.min.js"
             ]
           }
         }
