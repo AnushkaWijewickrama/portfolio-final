@@ -1,15 +1,29 @@
-<!-- Footer Start -->
-<div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-    <div class="container text-center py-5">
-        <div class="d-flex justify-content-center mb-4">
-            <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+<footer class="bg-black text-white">
+    <div class="container mx-auto">
+        <div class="flex flex-col md:py-30 pt-12 pb-20 md:gap-24 gap-16">
+            <div>
+                <h3 class="md:text-display-xl text-display-md font-semibold pb-4">
+                    Have an idea?
+                </h3>
+                <a href="/"
+                    class="md:text-display-xl text-display-md font-normal hover:text-primary-100 hover:underline">
+                    Let’s talk ↗
+                </a>
+            </div>
+            <div class="flex md:flex-row flex-col md:gap-8 gap-12 justify-between">
+                <div>
+                    <a href="mailto:hello@landify.design"
+                        class="md:text-display-xs text-body-xl font-medium text-neutral-200 hover:text-primary-100 hover:underline">
+                        {{"hello@landify.design"}}
+                    </a>
+                </div>
+                <div class="grid md:grid-cols-3 grid-cols-2 md:gap-12 gap-3 md:pl-32">
+                    <a *ngFor="let item of social" [href]="item.href"
+                        class="md:text-body-xl text-body-md font-normal text-neutral-200 hover:text-primary-100">
+                        {{ item.name }}
+                    </a>
+                </div>
+            </div>
         </div>
-        <p class="m-0">
-            Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">Anushka Wijewickrama</a>
-        </p>
     </div>
-</div>
-<!-- Footer End -->
+</footer>
