@@ -8,8 +8,7 @@ interface SocialLink {
 @Component({
   selector: 'app-footer',
   imports: [NgFor],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  templateUrl: './footer.component.html'
 })
 export class FooterComponent {
   social: SocialLink[] = [

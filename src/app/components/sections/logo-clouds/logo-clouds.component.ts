@@ -11,8 +11,7 @@ interface ClientLogo {
 @Component({
   selector: 'app-logo-clouds',
   imports: [NgFor],
-  templateUrl: './logo-clouds.component.html',
-  styleUrl: './logo-clouds.component.scss'
+  templateUrl: './logo-clouds.component.html'
 })
 export class LogoCloudsComponent {
   clientLogos: ClientLogo[] = [];

@@ -1,18 +1,18 @@
 [
-  { "id": "1", "name": "Slack", "publicURL": "/client-logos/04-slack.svg" },
+  { "id": "1", "name": "Slack", "publicURL": "/img/client-logos/04-slack.svg" },
   {
     "id": "2",
     "name": "Loom",
-    "publicURL": "/client-logos/02-loom.svg"
+    "publicURL": "/img/client-logos/02-loom.svg"
   },
   {
     "id": "2",
     "name": "Hotjar",
-    "publicURL": "/client-logos/03-hotjar.svg"
+    "publicURL": "/img/client-logos/03-hotjar.svg"
   },
   {
     "id": "2",
     "name": "Pendo",
-    "publicURL": "/client-logos/01-pendo.svg"
+    "publicURL": "/img/client-logos/01-pendo.svg"
   }
 ]

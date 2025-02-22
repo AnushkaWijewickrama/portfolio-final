@@ -10,8 +10,7 @@ interface Metric {
 @Component({
   selector: 'app-about',
   imports: [NgFor],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  templateUrl: './about.component.html'
 })
 export class AboutComponent {
   metrics: Metric[] = [

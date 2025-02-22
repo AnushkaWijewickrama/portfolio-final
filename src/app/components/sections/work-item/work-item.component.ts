@@ -11,8 +11,7 @@ interface WorkItem {
 @Component({
   selector: 'app-work-item',
   imports: [],
-  templateUrl: './work-item.component.html',
-  styleUrl: './work-item.component.scss'
+  templateUrl: './work-item.component.html'
 })
 export class WorkItemComponent {
   @Input() image: string = '';

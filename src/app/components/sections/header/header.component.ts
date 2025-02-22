@@ -5,8 +5,7 @@ import { NgFor } from '@angular/common';
 @Component({
   selector: 'app-header',
   imports: [ButtonComponent, NgFor],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  templateUrl: './header.component.html'
 })
 export class HeaderComponent {
   navigation = [

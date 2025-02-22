@@ -14,8 +14,7 @@ interface WorkItem {
 @Component({
   selector: 'app-works',
   imports: [WorkItemComponent, NgFor],
-  templateUrl: './works.component.html',
-  styleUrl: './works.component.scss'
+  templateUrl: './works.component.html'
 })
 export class WorksComponent implements OnInit {
   works: WorkItem[] = [];
