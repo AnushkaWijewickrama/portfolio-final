@@ -7,8 +7,9 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <app-work-item *ngFor="let work of works" [image]="work.image" [description]="work.description"
-                [title]="work.title"></app-work-item>
+            <app-work-item *ngFor="let project of projects" [image]="project.imagePath[0]"
+                [description]="project.longDescription" [title]="project.title" [projectLink]="project.projectLink"
+                [projectType]="project.projectType"></app-work-item>
         </div>
         <div class="flex justify-center mt-10">
             <a href="/"

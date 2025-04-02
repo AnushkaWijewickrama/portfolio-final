@@ -1,6 +1,8 @@
 import { NgFor } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { StackService } from '../../../shared/services/stack.service';
+import { Stack } from '../../../shared/models/stack';
 
 interface ClientLogo {
   id: string;
@@ -14,18 +16,19 @@ interface ClientLogo {
   templateUrl: './logo-clouds.component.html'
 })
 export class LogoCloudsComponent {
-  clientLogos: ClientLogo[] = [];
+  stacks: Stack[] = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private stackService: StackService) { }
 
   ngOnInit(): void {
-    this.loadClientLogos();
+    this.loadStack();
   }
 
-  private loadClientLogos(): void {
-    this.http.get<ClientLogo[]>('/logos.json').subscribe(
-      (data) => (this.clientLogos = data),
-      (error) => console.error('Error loading client logos:', error)
-    );
+  private loadStack(): void {
+    this.stackService.getstack();
+    this.stackService.getstackStream().subscribe((res: any) => {
+      this.stacks = res
+
+    })
   }
 }

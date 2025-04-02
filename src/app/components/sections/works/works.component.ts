@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { WorkItemComponent } from "../work-item/work-item.component";
 import { NgFor } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
+import { ProjectService } from '../../../shared/services/project.service';
+import { Project } from '../../../shared/models/project';
 
 interface WorkItem {
   id: string;
@@ -17,15 +19,19 @@ interface WorkItem {
   templateUrl: './works.component.html'
 })
 export class WorksComponent implements OnInit {
-  works: WorkItem[] = [];
+  projects: Project[] = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private projectService: ProjectService) { }
 
   ngOnInit() {
-    this.http.get<WorkItem[]>('/works.json').subscribe((data) => {
-      this.works = data;
-    });
+    this.loadProjects()
+  }
+  private loadProjects(): void {
+    this.projectService.getProject();
+    this.projectService.getProjectStream().subscribe((res: any) => {
+      this.projects = res
+      console.log(res)
 
-
+    })
   }
 }
