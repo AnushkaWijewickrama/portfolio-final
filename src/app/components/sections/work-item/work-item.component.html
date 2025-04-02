@@ -3,7 +3,9 @@
     <div class="p-4">
         <h3 class="text-lg font-semibold">{{ title }}</h3>
         <p class="text-sm text-neutral-700 mb-4" [innerHTML]="description"></p>
-        <p class="text-sm text-neutral-700 mb-4">Project Type : {{projectType}}</p>
-        <a [href]="projectLink">Project Link : {{projectLink}}</a>
+        <p class="text-sm text-neutral-700 mb-2"><b>Project Type :</b> {{projectType}}</p>
+        <p class="text-sm text-neutral-700 mb-2"><b>Techstack :</b> {{techStack}}</p>
+        <a [href]="projectLink"> <b>Project Link :</b> {{projectLink}}</a>
+
     </div>
 </div>

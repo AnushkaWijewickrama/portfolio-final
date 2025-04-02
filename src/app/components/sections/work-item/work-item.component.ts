@@ -19,6 +19,7 @@ export class WorkItemComponent {
   @Input() description: string = '';
   @Input() projectLink: any = '';
   @Input() projectType: string = '';
+  @Input() techStack = [];
 
   onImageLoad(event: Event) {
     const img = event.target as HTMLImageElement;

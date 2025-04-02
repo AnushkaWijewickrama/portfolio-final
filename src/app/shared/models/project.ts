@@ -7,5 +7,6 @@ export interface Project {
   projectYear: string
   projectType: string
   imagePath?: any
-  projectLink?: string
+  projectLink?: string,
+  techStack?: any
 }
