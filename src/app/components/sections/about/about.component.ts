@@ -14,7 +14,7 @@ interface Metric {
 })
 export class AboutComponent {
   metrics: Metric[] = [
-    { count: '15', label: 'YEARS OF EXPERIENCE' },
+    { count: '3', label: 'YEARS OF EXPERIENCE' },
     { count: '250+', label: 'MOBILE APPS SHIPPED' },
     { count: '18', label: 'DESIGN AWARDS' }
   ];
