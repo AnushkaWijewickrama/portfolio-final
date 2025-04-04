@@ -21,8 +21,4 @@ export class WorkItemComponent {
   @Input() projectType: string = '';
   @Input() techStack = [];
 
-  onImageLoad(event: Event) {
-    const img = event.target as HTMLImageElement;
-    img.classList.add('loaded');
-  }
 }
