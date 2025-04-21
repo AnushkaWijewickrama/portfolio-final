@@ -17,6 +17,7 @@ export class WorkItemComponent {
   @Input() image: string = '';
   @Input() title: string = '';
   @Input() description: string = '';
+  @Input() longDescription: string = '';
   @Input() projectLink: any = '';
   @Input() projectType: string = '';
   @Input() techStack = [];

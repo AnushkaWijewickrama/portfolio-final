@@ -26,7 +26,7 @@ export class LogoCloudsComponent {
 
   private loadStack(): void {
     this.stackService.getstack();
-    this.stackService.getstackStream().subscribe((res: any) => {
+    this.stackService.getstackStream().subscribe((res: Stack[]) => {
       this.stacks = res
 
     })

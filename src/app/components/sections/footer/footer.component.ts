@@ -12,11 +12,7 @@ interface SocialLink {
 })
 export class FooterComponent {
   social: SocialLink[] = [
-    { name: 'Instagram', href: '#' },
-    { name: 'Dribbble', href: '#' },
-    { name: 'Behance', href: '#' },
-    { name: 'Twitter', href: '#' },
-    { name: 'Facebook', href: '#' },
-    { name: 'YouTube', href: '#' },
+    { name: 'Instagram', href: 'https://www.instagram.com/anushka_wijewickrama_official/' },
+    { name: 'Linkedin', href: 'https://www.linkedin.com/in/anushka-wijewickrama/' }
   ];
 }

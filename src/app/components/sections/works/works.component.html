@@ -8,15 +8,9 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <app-work-item *ngFor="let project of projects" [image]="project.imagePath[0]"
-                [description]="project.longDescription" [title]="project.title" [projectLink]="project.projectLink"
-                [projectType]="project.projectType" [techStack]="project.techStack"></app-work-item>
-        </div>
-        <div class="flex justify-center mt-10">
-            <a href="/"
-                class="text-body-sm font-semibold text-white bg-neutral-900 py-4 px-6 rounded-full flex items-center gap-2">
-                VISIT MY DRIBBBLE
-
-            </a>
+                [description]="project.description" [title]="project.title" [projectLink]="project.projectLink"
+                [projectType]="project.projectType" [techStack]="project.techStack"
+                [longDescription]="project.longDescription"></app-work-item>
         </div>
     </div>
 

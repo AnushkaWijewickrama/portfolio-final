@@ -30,7 +30,6 @@ export class WorksComponent implements OnInit {
     this.projectService.getProject();
     this.projectService.getProjectStream().subscribe((res: any) => {
       this.projects = res
-      console.log(res)
 
     })
   }

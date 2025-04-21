@@ -98,7 +98,7 @@ export class StackService {
   }
 
 
-  deletestack(stackId: string): Observable<void> {
+  deleteStack(stackId: string): Observable<void> {
     return this.http.delete<void>(`${this.stackUrl}/${stackId}`).pipe(
       tap(() => {
         this.stack = this.stack.filter((proj: Stack) => proj._id !== stackId);

@@ -1,5 +1,5 @@
 import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 
 interface Metric {
@@ -13,14 +13,17 @@ interface Metric {
   templateUrl: './about.component.html'
 })
 export class AboutComponent {
+  counter = signal(0);
   metrics: Metric[] = [
-    { count: '3', label: 'YEARS OF EXPERIENCE' },
-    { count: '250+', label: 'MOBILE APPS SHIPPED' },
-    { count: '18', label: 'DESIGN AWARDS' }
+    { count: '3+', label: 'YEARS OF EXPERIENCE' },
+    { count: '20+', label: 'Web Application' },
+    // { count: '18', label: 'DESIGN AWARDS' }
   ];
 
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.counter.update(event => event + 1)
+  }
 }
