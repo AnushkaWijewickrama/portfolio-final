@@ -22,6 +22,7 @@ export class WorksComponent implements OnInit {
     this.projectService.getProject();
     this.projectService.getProjectStream().subscribe((res: Project[]) => {
       this.projects = res
+      console.log(this.projects)
 
     })
   }

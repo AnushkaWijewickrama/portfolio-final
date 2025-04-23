@@ -9,8 +9,8 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <app-work-item *ngFor="let project of projects" [image]="project.imagePath[0]"
                 [description]="project.description" [title]="project.title" [projectLink]="project.projectLink"
-                [projectType]="project.projectType" [projectRole]="project.role" [techStack]="project.techStack"
-                [longDescription]="project.longDescription"></app-work-item>
+                [projectType]="project.projectType" [techStack]="project.techStack"
+                [longDescription]="project.longDescription" [role]="project.role"></app-work-item>
         </div>
     </div>
 

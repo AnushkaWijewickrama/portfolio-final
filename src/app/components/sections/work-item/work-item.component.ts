@@ -21,6 +21,6 @@ export class WorkItemComponent {
   @Input() projectLink: any = '';
   @Input() projectType: string = '';
   @Input() techStack = [];
-  @Input() projectRole: string = '';
+  @Input() role: string = '';
 
 }
