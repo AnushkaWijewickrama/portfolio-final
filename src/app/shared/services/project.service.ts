@@ -56,6 +56,7 @@ export class ProjectService {
           projectType: response?.projectType,
           projectYear: response?.projectYear,
           longDescription: response.longDescription,
+          role: response.role,
 
         };
         this.route.navigate(['/projects'])
@@ -83,6 +84,7 @@ export class ProjectService {
     projectData.append("longDescription", data.longDescription);
     projectData.append("projectType", data.projectType);
     projectData.append("projectYear", data.projectYear);
+    projectData.append("role", data.role);
     if (data.image) {
       Object.keys(data.image).forEach(element => {
         console.log(data.image[element].image)
@@ -99,7 +101,8 @@ export class ProjectService {
           imagePath: response?.Project?.imagePath,
           longDescription: response?.Project?.longDescription,
           projectType: response?.Project?.projectType,
-          projectYear: response?.Project?.projectYear
+          projectYear: response?.Project?.projectYear,
+          role: response?.Project?.role
         };
 
         // Update the project array with the new data

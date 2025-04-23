@@ -2,14 +2,14 @@
     <div class="container mx-auto py-20 lg:py-28">
         <div class="text-center mb-12">
             <h2 class="lg:text-display-lg text-display-md font-semibold">
-                The work I do, <br /> and business I help.
+                🛠️ The work I do, <br> and the businesses I help
             </h2>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <app-work-item *ngFor="let project of projects" [image]="project.imagePath[0]"
                 [description]="project.description" [title]="project.title" [projectLink]="project.projectLink"
-                [projectType]="project.projectType" [techStack]="project.techStack"
+                [projectType]="project.projectType" [projectRole]="project.role" [techStack]="project.techStack"
                 [longDescription]="project.longDescription"></app-work-item>
         </div>
     </div>

@@ -1,14 +1,8 @@
 import { NgFor } from '@angular/common';
-import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { StackService } from '../../../shared/services/stack.service';
 import { Stack } from '../../../shared/models/stack';
 
-interface ClientLogo {
-  id: string;
-  name: string;
-  publicURL: string;
-}
 
 @Component({
   selector: 'app-logo-clouds',
@@ -18,7 +12,7 @@ interface ClientLogo {
 export class LogoCloudsComponent {
   stacks: Stack[] = [];
 
-  constructor(private http: HttpClient, private stackService: StackService) { }
+  constructor(private stackService: StackService) { }
 
   ngOnInit(): void {
     this.loadStack();
